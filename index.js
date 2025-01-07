@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose');
 const Product = require('./models/product.model.js');
-constProductRoute = require('./routes/product.route.js');
+const productRoute = require('./routes/product.route.js');
 const app = express()
 
 
@@ -15,7 +15,7 @@ app.listen(3000,() => {
 
 
 //routes
-app.use('api'/products , productRoute);
+app.use('api/products' , productRoute);
 
 app.get('/', (req, res) => {
     res.send("Hello from Node API Serve Upadted");
